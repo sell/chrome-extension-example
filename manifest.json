@@ -1,0 +1,26 @@
+{
+  "name": "CSS Browser Modification",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Browser css modifications, ability to modify: background color, background image, font color, custom google fonts",
+  "icons": {
+    "16": "assets/images/icon.png",
+    "48": "assets/images/icon.png",
+    "128": "assets/images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["init.js"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "chrome extension"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ]
+}

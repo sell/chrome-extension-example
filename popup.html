@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chrome Extension</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <h1>
+        Set a default background and text color for all sites
+    </h1>
+    <div class="form">
+        <div class="inputs">
+            <div class="field">
+                <label for="customFont">Set a custom font (google url only)</label>
+                <input type="text" id="customFont" />
+            </div>
+            <div class="field">
+                <label for="bodyImage">Set Background Image (optional)</label>
+                <input type="text" id="bodyImage" />
+            </div>
+            <div class="field">
+                <label for="bodyColor">Change Background Color</label>
+                <input type="color" id="bodyColor" />
+            </div>
+            <div class="field">
+                <label for="textColor">Change Text Color</label>
+                <input type="color" id="textColor" />
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="submit">Change</button>
+            <button id="revert">Revert</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Developed by <a href="//github.com/sell">Sell</a>
+        <p>Open Source: <a href="//github.com/sell/chrome-extension-example">Github Repo</a> </p>
+    </div>
+    <script src="assets/js/popup.js" charset="utf-8"></script>
+    <script src="assets/js/values.js" charset="utf-8"></script>
+</body>
+</html>

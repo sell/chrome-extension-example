@@ -1,0 +1,23 @@
+body {
+    width: 275px;
+    height: 300px;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+.form {
+    padding: 5px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.field label {
+    margin-bottom: 5px;
+}
+.footer {
+    margin: 10px 0;
+}
